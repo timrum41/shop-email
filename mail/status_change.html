@@ -1,0 +1,284 @@
+<table width="100%" bgcolor="#ffffff" cellspacing="0" cellpadding="0" border="0" style="border-collapse:collapse">
+    <tbody>
+    <tr valign="top">
+        <td>
+            <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center"
+                   style="max-width:900px;border-collapse:collapse">
+                <tbody>
+                <tr valign="top">
+                    <td>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0"
+                               style="border-collapse:collapse;max-width:600px">
+                            <tbody>
+                            <tr valign="baseline" align="right">
+                                <td width="" align="left" style="padding:0 0 30px 12px"><a
+                                        href="https://badmintonist.com/" rel=" noopener noreferrer" target="_blank"
+                                        data-saferedirecturl="https://www.google.com/url?q=https://badmintonist.com/&amp;source=gmail&amp;ust=1580823381427000&amp;usg=AFQjCNEHPFUsNAUlWdJEGevPxoBoKKt_gQ"><img
+                                        width="100%" alt="Интернет-магазин Badmintonist.com"
+                                        title="Интернет-магазин Badmintonist.com" border="0"
+                                        style="display:block;max-width:199px"
+                                        src="https://res.cloudinary.com/dmqqshihc/image/upload/v1685603667/certificates/badm-logo-blue.png"
+                                        class="CToWUd"></a></td>
+                                <td style="padding:0 12px 30px 12px"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr valign="top" style="font-family:Arial;font-size:25px;color:#000000">
+                    <td style="padding:0 12px 22px 12px;line-height:32px">{$name}, статус вашего заказа изменен на
+                        {$status|lower}!
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0"
+                   style="border-collapse:collapse;max-width:900px;">
+                <tbody>
+                <tr valign="top">
+                    <td style="padding:0 12px 22px 0">
+                        <table align="left" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;max-width:900px;">
+                            <tbody>
+                            <tr valign="top" style="font-family:Arial;font-size:14px;color:#000000">
+                                <td width="137" style="padding:0 12px 12px 12px;color:#808285;line-height:26px">Номер&nbsp;заказа:</td>
+                                <td style="padding:0 12px 12px 0;line-height:26px"><a
+                                        style="font-family:Arial;font-size:14px;color:#1976d3;text-decoration:none"
+                                        href="https://badmintonist.com/my/orders/?order={$order_id}"
+                                        rel=" noopener noreferrer" target="_blank"
+                                        data-saferedirecturl="">{$order}</a>
+                                </td>
+                            </tr>
+                            <tr valign="top" style="font-family:Arial;font-size:14px">
+                                <td style="padding:0 12px 0 12px;color:#808285;line-height:26px">Статус:</td>
+                                <td style="padding:0 12px 0 0;color:#333333;line-height:26px"> {$status}
+                                </td>
+                            </tr>
+                            <tr valign="top" style="font-family:Arial;font-size:14px">
+                                <td style="padding:0 12px 0 12px;color:#808285;line-height:26px">Способ доставки:</td>
+                                <td style="padding:0 12px 0 0;color:#333333;line-height:26px"> {$delivery}
+                                </td>
+                            </tr>
+                            {if $track_number}
+                            <tr valign="top" style="font-family:Arial;font-size:14px">
+                                <td style="padding:0 12px 0 12px;color:#808285;line-height:26px">Трек-номер заказа:</td>
+                                <td style="padding:0 12px 0 0;color:#333333;line-height:26px">{$track_number}
+                                </td>
+                            </tr>
+                            <tr valign="top" style="font-family:Arial;font-size:14px">
+                                <td style="padding:0 12px 0 12px;color:#808285;line-height:26px">&nbsp;</td>
+                                <td style="padding:0 12px 12px 0;color:#333333;line-height:16px">
+                                    Отслеживание доступно через 1-2 дня после передачи заказа в службу доставки
+                                </td>
+                            </tr>
+                            {/if}
+                            <tr valign="top" style="font-family:Arial;font-size:14px">
+                                <td style="padding:0 12px 12px 12px;color:#808285;line-height:26px">Получатель:</td>
+                                <td style="padding:0 12px 12px 0;color:#333333;line-height:26px">{$name}
+                                </td>
+                            </tr>
+                            {if $counterparty_status}
+                            <tr valign="top" style="font-family:Arial;font-size:14px">
+                                <td style="padding:0 12px 12px 12px;color:#808285;line-height:26px">Ваш статус постоянного клиента:</td>
+                                <td style="padding:0 12px 12px 0;color:#333333;line-height:26px">{$counterparty_status}
+                                </td>
+                            </tr>
+                            {/if}
+                            <tr valign="top" style="font-family:Arial;font-size:14px">
+                                <td style="padding:0 12px 12px 12px;color:#808285;line-height:26px">
+                                    Способ&nbsp;оплаты:
+                                </td>
+                                <td style="padding:0 12px 12px 0;color:#333333;line-height:26px">Наличными или
+                                    банковской картой<br>{$sum} руб.
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr valign="top" style="font-family:Arial;font-size:21px;color:#000000">
+                    <td style="padding:0 12px 12px 12px;line-height:24px">Вы заказали:</td>
+                </tr>
+                <tr valign="top">
+                    <td style="padding:0 0 22px 0">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0"
+                               style="border-collapse:collapse;max-width:900px">
+                            <tbody>
+                            <tr valign="top">
+                                <td style="padding:0 12px 0 12px">
+                                    <table width="100%" cellspacing="0" cellpadding="0" border="0"
+                                           style="border-collapse:collapse">
+                                        <tbody>
+                                        <tr valign="top">
+                                            <td>
+                                                <table width="100%" align="left" cellspacing="0" cellpadding="0"
+                                                       border="0" style="border-collapse:collapse">
+                                                    <tbody>
+                                                    <tr>
+                                                        <th align="left">Наименование</th>
+                                                        <th align="center">Кол-во</th>
+                                                        <th align="center">Цена</th>
+                                                        <th align="center">Скидка в %</th>
+                                                        <th align="right">Сумма</th>
+                                                    </tr>
+                                                    {foreach $positions as $position}
+                                                    <tr>
+                                                        <td style="padding:12px 0 12px 4px;border-bottom:1px solid #d7d7d7">
+                                                            <p style="font-style:normal;font-variant:normal;font-weight:normal;font-size:14px;line-height:16px;font-family:Helvetica,Arial,sans-serif">
+                                                                {$position.name}
+                                                            </p></td>
+                                                        <td style="padding:12px 4px 12px 4px;white-space:nowrap;text-align:center;border-bottom:1px solid #d7d7d7">
+                                                            <font style="color:#959595">{$position.quantity}</font>
+                                                        </td>
+                                                        <td style="padding:12px 4px 12px 4px;white-space:nowrap;text-align:center;border-bottom:1px solid #d7d7d7">
+                                                            <font style="color:#959595">{$position.price} руб.</font>
+                                                        </td>
+                                                        <td style="padding:12px 4px 12px 4px;white-space:nowrap;text-align:center;border-bottom:1px solid #d7d7d7">
+                                                            <font style="color:#959595">{$position.discount}</font>
+                                                        </td>
+                                                        <td style="padding:12px 4px 12px 4px;white-space:nowrap;text-align:right;border-bottom:1px solid #d7d7d7">
+                                                            <font style="color:#959595">{$position.sum} руб.</font>
+                                                        </td>
+                                                    </tr>
+                                                    {/foreach}
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr valign="top">
+                            </tr>
+                            <tr valign="top">
+                                <td style="padding:0 12px 0 12px">
+                                    <table width="203" align="right" cellspacing="0" cellpadding="0" border="0"
+                                           style="border-collapse:collapse;margin-top: 20px;">
+                                        <tbody>
+                                        <tr style="font-family:Arial;font-size:14px;color:#000000">
+                                            <td style="line-height:24px;color:#808285"></td>
+                                            <td align="right" style="line-height:24px"></td>
+                                        </tr>
+                                        <tr style="font-family:Arial;font-size:14px;color:#000000">
+                                            <td style="line-height:24px;color:#808285">К оплате:</td>
+                                            <td align="right" style="line-height:24px">{$sum} руб.</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0"
+                   style="border-collapse:collapse;max-width:900px">
+                <tbody>
+                <tr valign="top">
+                    <td style="padding:0 12px 22px 12px">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0"
+                               style="border-collapse:collapse;font-family:Arial;font-size:12;color:#999999;text-decoration:none">
+                            <tbody>
+                            <tr valign="top">
+                                <td width="23%" style="padding:0 5px 0 0"><a
+                                        href="https://badmintonist.com/web/payment/"
+                                        style="text-decoration:none;color:#999999" rel=" noopener noreferrer"
+                                        target="_blank"
+                                        data-saferedirecturl="https://www.google.com/url?q=https://badmintonist.com/web/payment/&amp;source=gmail&amp;ust=1580823381428000&amp;usg=AFQjCNG1tdawkQl0alPx83x1QV8ygBkWGA"><img
+                                        width="35" height="35" alt="" border="0" style="display:block"
+                                        src="https://badmintonist.com/wa-data/public/shop/images/car1.png"
+                                        class="CToWUd">
+                                    <p>Доставка<br> по всей России</p></a></td>
+                                <td width="2%">&nbsp;</td>
+                                <td width="23%" style="padding:0 5px 0 0"><a
+                                        href="https://badmintonist.com/web/payment/"
+                                        style="text-decoration:none;color:#999999" rel=" noopener noreferrer"
+                                        target="_blank"
+                                        data-saferedirecturl="https://www.google.com/url?q=https://badmintonist.com/web/payment/&amp;source=gmail&amp;ust=1580823381428000&amp;usg=AFQjCNG1tdawkQl0alPx83x1QV8ygBkWGA"><img
+                                        width="35" height="35" alt="" border="0" style="display:block"
+                                        src="https://badmintonist.com/wa-data/public/shop/images/money1.png"
+                                        class="CToWUd">
+                                    <p>Различные<br> способы оплаты</p></a></td>
+                                <td width="2%">&nbsp;</td>
+                                <td width="23%" style="padding:0 5px 0 0"><a
+                                        href="https://badmintonist.com/category/podarochnye-sertifikaty/"
+                                        style="text-decoration:none;color:#999999" rel=" noopener noreferrer"
+                                        target="_blank"
+                                        data-saferedirecturl="https://www.google.com/url?q=https://badmintonist.com/category/podarochnye-sertifikaty/&amp;source=gmail&amp;ust=1580823381428000&amp;usg=AFQjCNHaU2sWK-j93ffIA6LOOnwETEnbAA"><img
+                                        width="35" height="35" alt="" border="0" style="display:block"
+                                        src="https://badmintonist.com/wa-data/public/shop/images/gift1.png"
+                                        class="CToWUd">
+                                    <p>Подарочные <br> сертификаты</p></a></td>
+                                <td width="2%">&nbsp;</td>
+                                <td width="23%" style="padding:0 5px 0 0"><a
+                                        href="https://badmintonist.com/web/partners/"
+                                        style="text-decoration:none;color:#999999" rel=" noopener noreferrer"
+                                        target="_blank"
+                                        data-saferedirecturl="https://www.google.com/url?q=https://badmintonist.com/web/partners/&amp;source=gmail&amp;ust=1580823381428000&amp;usg=AFQjCNFbqTARmUR7WSFJqIyO8EYJXgTgBw"><img
+                                        width="35" height="35" alt="" border="0" style="display:block"
+                                        src="https://badmintonist.com/wa-data/public/shop/images/king1.png"
+                                        class="CToWUd">
+                                    <p>Скидки <br> постоянным клиентам</p></a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table width="100%" align="center" bgcolor="#f1f1f1" border="0" cellspacing="0" cellpadding="0"
+                   style="border-collapse:collapse;max-width:900px">
+                <tbody>
+                <tr valign="top" align="left">
+                    <td style="padding:36px 12px 18px 12px">
+                        <table border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse">
+                            <tbody>
+                            <tr valign="top">
+                                <td style="padding:0 30px 0 0"><a href="https://vk.com/badm_com"
+                                                                  rel=" noopener noreferrer" target="_blank"
+                                                                  data-saferedirecturl="https://www.google.com/url?q=https://vk.com/badm_com&amp;source=gmail&amp;ust=1580823381428000&amp;usg=AFQjCNE_iyINIs832_ZTvttfx_rSYSWyhw"><img
+                                        width="21" height="21" alt="" border="0" style="display:block"
+                                        src="https://badmintonist.com/wa-data/public/shop/images/vk1.png"
+                                        class="CToWUd"></a></td>
+                                <td style="padding:0 30px 0 0"><a href="https://www.instagram.com/badmintonist_com/"
+                                                                  rel=" noopener noreferrer" target="_blank"
+                                                                  data-saferedirecturl="https://www.google.com/url?q=https://www.instagram.com/badmintonist_com/&amp;source=gmail&amp;ust=1580823381429000&amp;usg=AFQjCNEINIXU7KKTCC4U2onwAnY1qk-WAQ"><img
+                                        width="21" height="21" alt="" border="0" style="display:block"
+                                        src="https://badmintonist.com/wa-data/public/shop/images/in1.png"
+                                        class="CToWUd"></a></td>
+                                <td style="padding:0 30px 0 0"><a href="https://www.facebook.com/badmintonistcom"
+                                                                  rel=" noopener noreferrer" target="_blank"
+                                                                  data-saferedirecturl="https://www.google.com/url?q=https://www.facebook.com/badmintonistcom&amp;source=gmail&amp;ust=1580823381429000&amp;usg=AFQjCNHKK3a2t_Kl1hpq9Xxri0gakZ1s-g"><img
+                                        width="21" height="21" alt="" border="0" style="display:block"
+                                        src="https://badmintonist.com/wa-data/public/shop/images/fb1.png"
+                                        class="CToWUd"></a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr valign="top" align="left" style="font-family:Arial;font-size:9px;color:#999999">
+                    <td style="padding:0 12px 0 12px">Вы получили это письмо, потому что зарегистрированы на сайте&nbsp;<a
+                            style="color:#999999" href="https://badmintonist.com/" rel=" noopener noreferrer"
+                            target="_blank"
+                            data-saferedirecturl="https://www.google.com/url?q=https://badmintonist.com/&amp;source=gmail&amp;ust=1580823381429000&amp;usg=AFQjCNHfLsDatExtlnUC7VnR8hAycXiMOA">Badmintonist.com</a>.&nbsp;Данное
+                        письмо не требует ответа. <br>ООО «Спорт Лайк», ИНН <span>7723373127</span>, ОГРН <span>1157746034159</span>.
+                        Юр. адрес: <a style="color:#999999;text-decoration:none"
+                                      href="https://badmintonist.com/web/contacts/" rel=" noopener noreferrer"
+                                      target="_blank"
+                                      data-saferedirecturl="https://www.google.com/url?q=https://badmintonist.com/web/contacts/&amp;source=gmail&amp;ust=1580823381429000&amp;usg=AFQjCNGRrdDSXoiLLY2J_Mfq-tB2BhX1LQ">125581,
+                            Москва, ул. Лавочкина, дом 32, этаж 1, комната 107</a>.<br><br><a style="color:#999999"
+                                                                                              href="https://badmintonist.com/web/politika/"
+                                                                                              rel=" noopener noreferrer"
+                                                                                              target="_blank"
+                                                                                              data-saferedirecturl="https://www.google.com/url?q=https://badmintonist.com/web/politika/&amp;source=gmail&amp;ust=1580823381429000&amp;usg=AFQjCNFx0G9vqwqNGKpvJ3IAjn43zZzFwQ">Политика
+                            ООО «Спорт Лайк» в отношении обработки персональных данных</a><br><br></td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    </tbody>
+</table>
