@@ -169,9 +169,9 @@ class shopMystorePluginFrontendGetorderwebhooksController extends waJsonControll
             $view->assign('action', $this);
 
 
-            $mail_message = new waMailMessage('Статус вашего заказа #' . $order['name'] . ' на сайте badmintonist.com изменен на ' . strtolower($new_status));
+            $mail_message = new waMailMessage('Статус вашего заказа №' . $order['name'] . ' на сайте badmintonist.com изменен на ' . strtolower($new_status));
             if ($new_order) {
-                $mail_message = new waMailMessage('Ваш заказ #' . $order['name'] . ' на сайте badmintonist.com успешно оформлен');
+                $mail_message = new waMailMessage('Ваш заказ №' . $order['name'] . ' на сайте badmintonist.com успешно оформлен');
             }
 
             if ($send_email) {
